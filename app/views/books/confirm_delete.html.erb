@@ -1,0 +1,8 @@
+<h1>Confirm Deletion</h1>
+
+<p>Are you sure you want to delete the following book?</p>
+
+<p><strong>Title:</strong> <%= @book.title %></p>
+
+<%= button_to 'Yes, Delete This Book', book_path(@book), method: :delete, class: 'danger' %>
+<%= link_to 'Cancel', books_path %>
